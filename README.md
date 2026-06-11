@@ -145,20 +145,21 @@ agenda_final/
 
 ## Banco de Dados
 
-O projeto utiliza MySQL. O script de criação do banco está no arquivo:
+O sistema utiliza duas abordagens de armazenamento:
 
-text
-banco_agenda_contatos.sql
+### Banco Relacional
+- MySQL
+- Responsável pelo armazenamento principal de usuários, contatos e grupos.
 
+### Banco NoSQL
+- Firebase Firestore
+- Utilizado para armazenamento de logs e auditoria das operações do sistema.
 
-O script cria o banco agenda_contatos e as tabelas:
-
-* usuario
-* grupo
-* contato
-* detalhes_contato
-
-Também são inseridos usuários, grupos e contatos iniciais para teste.
+Exemplo de dados armazenados:
+- Usuário responsável pela ação
+- Tipo da operação realizada
+- Data da operação
+- Sistema de origem
 
 ## Usuários de Teste
 
